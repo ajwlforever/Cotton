@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Cotton</string>
+    <string name="data_recording">数据记录</string>
+    <string name="bottom_1">记录</string>
+    <string name="bottom_2">查看</string>
+    <string name="bottom_3">个人中心</string>
+    <string name="record">记录</string>
+    <string name="change_picture">修改头像</string>
+    <string name="user_val">联系方式</string>
+    <string name="user_name">用户姓名</string>
+     <string name="back">返回</string>
+    <string name="confirm">确认</string>
+    <string name="person_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名:</string>
+    <string name="person_city">所在地区:</string>
+    <string name="person_phone_number">电话号码:</string>
+    <string name="person_name_hint">请输入您的姓名</string>
+    <string name="person_title">请输入您的信息</string>
+    <string name="co2">二氧化碳浓度</string>
+    <string name="air_shidu">空气湿度</string>
+    <string name="air_temp">空气温度</string>
+    <string name="fengsu">风速</string>
+    <string name="west">华西地区</string>
+    <string name="east">华东地区</string>
+    <string name="south">华南地区</string>
+    <string name="north">华北地区</string>
+    <string name="spin_selected_title">指标选择</string>
+    <string name="tips_1">请根据数据选择指标值：</string>
+    <string name="spin_selected_content">请选择值：</string>
+    <string name="alarm_title">警报设置</string>
+</resources>

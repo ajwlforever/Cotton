@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="echarts.js"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = echarts.init(document.getElementById('main')); 
+        var option;
+		function ctreate_1(dataArray_1){
+       option = {
+    title : {
+        text: '湿度变化',
+        subtext: ''
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['湿度']
+    },
+    toolbox: {
+        show : true,
+       feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+           boundaryGap : false,
+            data : ['-3d','-2d','-1d','now','+1d','+2d','+3d']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            axisLabel : {
+                formatter: '{value} %'
+            }
+        }
+    ],
+    series : [
+        {
+			 
+            name:'湿度',
+            type:'line',
+            data:dataArray_1,
+			color:'bluegreen',
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值',itemStyle: {        // 数据级个性化折线样式
+                        normal: {
+                            color: 'yellowgreen'
+                        }}},
+                    {type : 'min', name: '最小值',itemStyle: {        // 数据级个性化折线样式
+                        normal: {
+                            color: 'yellowgreen'
+                        }}}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值', itemStyle: {        // 数据级个性化折线样式
+                        normal: {
+                            color: 'red'
+                        }}}
+                ]
+            }
+        }
+       
+    ]
+};
+		
+        // 为echarts对象加载数据 
+        myChart.setOption(option); }
+		
+	
+    </script>
+    <p>lisa</p>
+</body>

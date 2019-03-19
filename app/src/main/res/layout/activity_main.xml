@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/white"
+       >
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:text="@string/data_recording"
+        android:fontFamily=""
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="15sp"
+
+        />
+
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/botton_bar"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/button"
+            android:drawableTop="@drawable/record_selector"
+            style="@style/bar_item"
+            android:text="@string/bottom_1"
+            android:background="@color/transparent"/>
+        <RadioButton
+            android:id="@+id/button1"
+            android:drawableTop="@drawable/look_slector"
+            style="@style/bar_item"
+            android:text="@string/bottom_2"
+            android:background="@color/transparent"/>
+        <RadioButton
+            android:id="@+id/button2"
+            android:drawableTop="@drawable/my_slector"
+            style="@style/bar_item"
+            android:text="@string/bottom_3"
+            android:background="@color/transparent"/>
+    </RadioGroup>
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/botton_bar"
+        android:background="@color/white" />
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/vpager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/top_bar"/>
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+
+        />
+
+</RelativeLayout>

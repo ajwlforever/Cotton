@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="person">
+        <item>个人信息</item>
+        <item>警报设置</item>
+        <item>联系我们</item>
+    </string-array>
+    <string-array name="app">
+        <item>版本更新</item>
+        <item>设置</item>
+
+    </string-array>
+</resources>

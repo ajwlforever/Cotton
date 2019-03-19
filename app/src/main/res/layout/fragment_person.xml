@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="@string/person_title"
+        android:textSize="25sp"
+
+        android:id="@+id/person_title"
+        />
+
+    <View android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:id="@+id/v_1"
+    android:layout_below="@id/person_title"
+    android:background="@color/blackpink"
+    />
+    <Button
+
+        android:id="@+id/person_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="0dp"
+        android:text="@string/confirm" />
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tableLayout"
+        android:layout_below="@id/person_title"
+        >
+
+        <TableRow
+            android:layout_marginTop="25dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/person_name"
+        android:id="@+id/view_1"
+        android:textSize="22sp"
+
+        />
+    <EditText
+
+        android:hint="@string/person_name_hint"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+         android:id="@+id/editText_1"
+
+        />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/person_phone_number"
+                android:id="@+id/view_2"
+                android:textSize="22sp"
+
+                />
+            <EditText
+
+                android:inputType="phone"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/editText_2"
+
+                />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/person_city"
+                android:id="@+id/view_3"
+                android:textSize="22sp"
+
+                />
+            <EditText
+
+
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:id="@+id/popup_edit"
+
+                />
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/popup_menu"
+                android:src="@drawable/my"
+                />
+        </TableRow>
+</TableLayout>
+</RelativeLayout>
+
